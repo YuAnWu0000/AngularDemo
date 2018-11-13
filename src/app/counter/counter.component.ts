@@ -24,6 +24,6 @@ export class CounterComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    // this.countdown.unsubscribe();
+     this.countdown.unsubscribe();
   }
 }
