@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {CounterService} from './counter.service';
-import {Router} from '@angular/router';
+import { CounterService } from './counter.service';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-counter',
@@ -9,8 +9,8 @@ import { Subscription } from 'rxjs';
   providers: [CounterService]
 })
 export class CounterComponent implements OnInit, OnDestroy {
-  nowTime = 10;
-  countdown: Subscription;
+  public nowTime = 10;
+  public countdown: Subscription;
   constructor(private counterService: CounterService, private router: Router) { }
 
   ngOnInit() {

@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { CounterComponent } from './counter/counter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     UserComponent,
     CounterComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AutoCompleteComponent
   ],
   imports: [
     BrowserModule,
