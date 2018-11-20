@@ -1,3 +1,6 @@
-<input type="text" [(ngModel)]="name">
-<p>姓名: {{name}}</p>
+<div>
+    <input type="text" [(ngModel)]="name">
+    <div>姓名: {{name}} 《= Two ways data binding</div>
+</div>
 <button routerLink="/user/{{name}}">快速登入</button>
+<app-paint></app-paint>

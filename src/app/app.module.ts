@@ -10,6 +10,8 @@ import { CounterComponent } from './counter/counter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { PaintComponent } from './paint/paint.component';
+import { ArticleComponent } from './user/article/article.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     CounterComponent,
     NavbarComponent,
     FooterComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    PaintComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

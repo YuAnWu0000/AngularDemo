@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import * as $ from 'jquery';
 import { Observable, fromEvent, from, of } from 'rxjs';
 import { switchMap, map, debounceTime, filter } from 'rxjs/operators';
 import { AutoCompleteService } from './auto-complete.service';
