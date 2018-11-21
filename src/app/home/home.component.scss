@@ -1,0 +1,22 @@
+.article-link {
+    text-decoration: underline;
+}
+/* unvisited link */
+.article-link:link {
+    color: red;
+}
+
+/* visited link */
+.article-link:visited {
+    color: green;
+}
+
+/* mouse over link */
+.article-link:hover {
+    color: hotpink;
+}
+
+/* selected link */
+.article-link:active {
+    color: blue;
+}
