@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. User頁面利用Observable/subscribe設定倒數定時器，倒數結束跳轉至首頁。
 4. 利用Observable/subsribe完成auto complete(wiki api)。
 5. 殘缺不齊的小畫家功能。
-6. User頁面利用Observab/Subject實作文章條件排序功能。
+6. User頁面利用Observable/Subject實作文章條件排序功能。
 
 ## Issues
 1. rxjs fromEvent invalid event target <br>
