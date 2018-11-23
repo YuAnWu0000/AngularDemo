@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module'; //router 另外設定
-import { NgbPopoverModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap'; //google重構的bootstrap 解決bootstrap popover/tooltip無法正常運作的問題
+import { NgbPopoverModule, NgbTooltipModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap'; //google重構的bootstrap 解決bootstrap popover/tooltip無法正常運作的問題
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -35,6 +35,7 @@ import { PopoverComponent } from './popover/popover.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModalModule,
     NgbPopoverModule,
     NgbTooltipModule
   ],

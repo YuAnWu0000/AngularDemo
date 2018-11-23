@@ -1,3 +1,47 @@
+img { //白底圖片去背
+    mix-blend-mode: multiply;
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+strong{
+    font-size: 18px;
+    font-family: fantasy;
+}
+
+.transparent { //背景圖片透明化
+    background:rgba(255,255,255,0.3);
+    background-size: cover;
+    text-align: center;
+}
+
+.whyAngular {
+    background-image: url('../../assets/images/cat_slide1.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.angularArchi {
+    background-image: url('../../assets/images/cat_slide2.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.content {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
 .article-link {
     text-decoration: underline;
 }
@@ -8,7 +52,7 @@
 
 /* visited link */
 .article-link:visited {
-    color: green;
+    color: red;
 }
 
 /* mouse over link */
@@ -19,4 +63,20 @@
 /* selected link */
 .article-link:active {
     color: blue;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: fixed;
+}
+
+.whyAngular {
+    background-image: url('../../assets/images/cat_slide1.jpg'); 
+    background-attachment: fixed;
+}
+
+.transparent {
+    background:rgba(255,255,255,0.5);
 }

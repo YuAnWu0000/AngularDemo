@@ -1,5 +1,12 @@
+ <!-- Button click trigger modal -->
+<!-- <button type="button" class="btn btn-outline-success btn-sm ml-2" data-toggle="modal" data-target="#SampleCode">
+  sample code
+</button> -->
+<button type="button" class="btn btn-success btn-sm ml-2" data-toggle="modal" (click)="openVerticallyCentered(content)">
+  sample code
+</button>
 <!-- Bootstrap Modal -->
-<div class="modal fade" id="SampleCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="SampleCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,6 +17,7 @@
       </div>
       <div class="modal-body">
         <img src={{imagepath}} width="100%">
+        <p>{{imagepath}}</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" ngbTooltip="你也很棒" data-dismiss="modal">寫得好棒</button>
@@ -17,4 +25,47 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- <ng-template #content let-modal>
+  <div class="modal fade" id="SampleCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Component sample code</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src={{imagepath}} width="100%">
+          <p>{{imagepath}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" ngbTooltip="你也很棒" data-dismiss="modal">寫得好棒</button>
+          <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="我勸你是好好選" ngbPopover="你自己來寫!我看你寫多好" popoverTitle="不知感恩的傢伙" container="body">寫得好爛</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template> -->
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <img src={{imagepath}} width="100%">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ngbTooltip="你也很棒" (click)="modal.close('Save click')">寫得好棒</button>
+    <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="我勸你是好好選" ngbPopover="你自己來寫!我看你寫多好" popoverTitle="不知感恩的傢伙" container="body">寫得好爛</button>
+  </div>
+</ng-template>

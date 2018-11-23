@@ -1,100 +1,103 @@
-<div class="container-fluid">
-  <app-auto-complete></app-auto-complete>
-  <div class="row">
-    <div class="col-sm-6">
-      <img src="../../assets/images/JSframework_wordcloud.jpg" width="100%">
-    </div>
-    <div class="col-sm-5 pt-5">
-        <h1>這麼多 Javascript framework 怎麼選?</h1>
-        <a class="article-link" href="https://ithelp.ithome.com.tw/articles/10202827" target="_blank">[Angular 深入淺出三十天] Day 02 - 為什麼是 Angular？</a>
-        <p class="mt-2">
-          "Angular 一開始的學習曲線雖然與其他框架相比高了些，畢竟它比較囉嗦，開發方式也跟傳統的開發方式大相逕庭。
-          對於一般習慣傳統開發方式或是剛踏入前端甚至是程式領域的人來說，是滿辛苦、難以理解的。
-          但渡過一開始的陣痛期與適應了之後，其實是會忽然有一種豁然開朗的感覺！
-          Angular 跟其他的開發框架不一樣的是，它比較像是一個完整的平台，從開發到測試它都一手包辦，並且擁有豐富的生態系，背後又有 Google 在推動，
-          甚至就許多公司的立場而言，Angular 有完整、完善的規範與一致的開方式，這才是一個框架、一個平台真正的價值。" --by Leo
-        </p>
-        <img src="../../assets/images/learnig_curve.jpg" width="100%">
-    </div>
-  </div>  
-  <!-- <div class="row pt-4">
-    <div class="col-sm-4">
-      <img src="../../assets/images/pain.jpg" width="60%">
-    </div>
-    <div class="col-sm-4">
-      <img src="../../assets/images/framework.jpg" width="60%">
-    </div>
-    <div class="col-sm-4">
-      <img src="../../assets/images/dont_need.jpg" width="60%">
-    </div>
-  </div> -->
-  <div class="row pt-4">
-    <div class="col-sm-6">
-      <img src="../../assets/images/angular_overview.png" width="100%">
-    </div>
-    <div class="col-sm-5">
-      <div class="pl-4">
-        <h1>Angular 架構</h1>
-        <p style="font-family: 'Noto Sans TC', sans-serif;">
-          Angular 的主要架構就是一堆的 Components。
-          不過當然，組成 Angular的東西還包含 Module、Template、Metadata、Data Binding、Service、Directive、Dependency Injection，從左邊這張圖可以清楚看到彼此的關係。
-        </p>
+<div class="container-fluid whyAngular">
+  <!-- <img src="../../assets/images/Gakki_home_page.jpg"> -->
+  <!-- <app-auto-complete></app-auto-complete> -->
+  <div class="transparent">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="../../assets/images/JSframework_wordcloud.jpg" width="100%">
       </div>
-      <ul class="mt-3">
-        <div>
-          <li>
-            <strong>Component</strong>
-            <button type="button" class="btn btn-outline-success btn-sm ml-2" data-toggle="modal" data-target="#SampleCode" data-imgpath="../../assets/images/component_sample.PNG">
-              sample code
-            </button>              
-          </li>
-          <p>
-            "首先先看左圖最中間那一塊，是由template、metadata、component所構成的，這三個是一個component必備的元素。
-            在 Angular 的世界裡，Component 負責定義與控制畫面，令其可以根據資料和程式邏輯呈現相對應的畫面。" --by Leo
+      <div class="col-sm-6 pt-4">
+          <h1>Why Angular??</h1>
+          <a class="article-link" href="https://ithelp.ithome.com.tw/articles/10202827" target="_blank">[Angular 深入淺出三十天] Day 02 - 為什麼是 Angular？</a>
+          <p class="content mt-2">
+            "Angular 一開始的學習曲線雖然與其他框架相比高了些，畢竟它比較囉嗦，開發方式也跟傳統的開發方式大相逕庭。
+            對於一般習慣傳統開發方式或是剛踏入前端甚至是程式領域的人來說，是滿辛苦、難以理解的。
+            但渡過一開始的陣痛期與適應了之後，其實是會忽然有一種豁然開朗的感覺！
+            Angular 跟其他的開發框架不一樣的是，它比較像是一個完整的平台，從開發到測試它都一手包辦，並且擁有豐富的生態系，背後又有 Google 在推動，
+            甚至就許多公司的立場而言，Angular 有完整、完善的規範與一致的開方式，這才是一個框架、一個平台真正的價值。" --by Leo
           </p>
+      </div>
+      <div class="row">
+          <div>
+            <img src="../../assets/images/learnig_curve.jpg" width="100%">
+          </div>
         </div>
-        <div>
-          <li>
-            <strong>Module</strong>
-            <button type="button" class="btn btn-outline-success btn-sm ml-2" data-toggle="modal" data-target="#SampleCode">
-                sample code
-            </button>
-          </li>
-          
-          <p>
-            "在 Angular 2 中，一個 Module ( 模組 ) 是一個把彼此互相關聯的 components、directives、pipes 和 services 整合的機制。然後這個模組可以再和其他模組結合，最後就形成我們的網頁應用程式。
-            --by 微中子
-          </p>
-        </div>
-        <div>
-          <li>
-            <strong>Router</strong>
-            <button type="button" class="btn btn-outline-success btn-sm ml-2" data-toggle="modal" data-target="#SampleCode">
-                sample code
-            </button>
-          </li>
-          <p>
-            "Angular 的路由機制靠的是我們放在 Template 裡的路由插座 - router-outlet 。             
-            路由插座有點像是定位點的概念，我們只要把我們需要切換顯示的區塊裡放入這個路由插座，Angular 的路由機制就會將找到的路由設定裡要顯示的 Component 插入，進而達成換頁的效果。" --by Leo
-          </p>
-        </div>
-      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="container-fluid angularArchi">
+  <div class="transparent ">
+  <div class="container">
+    <div class="col-sm pt-4">
+      <h1 >Angular 架構圖</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm"><img src="../../assets/images/angular_overview.png" width="90%"></div>
+    </div>
+    <div class="row">
       
+      <div class="col-sm-6">
+        
+        <div class="pl-3">
+          <p class="mt-4 mb-5 content">
+            "Angular 的主要架構就是一堆的 Components。
+            不過當然，組成 Angular的東西還包含 Module、Template、Metadata、Data Binding、Service、Directive、Dependency Injection，從上面這張圖可以清楚看到彼此的關係。" --by Leo
+          </p>
+        </div>
+          <div>
+            <li>
+              <strong>Component</strong>
+              <app-popover [imagepath]="componentpath" title="Component Sample Code"></app-popover>  <!--//需要傳入component module router三種不同的變數 -->              
+            </li>
+            <p class="content">
+              "首先先看上圖最中間那一塊，是由template、metadata、component所構成的，這三個是一個component必備的元素。
+              在 Angular 的世界裡，Component 負責定義與控制畫面，令其可以根據資料和程式邏輯呈現相對應的畫面。" --by Leo
+            </p>
+          </div>
+          <div>
+            <li>
+              <strong>Module</strong>
+              <app-popover [imagepath]="modulepath" title="Module Sample Code"></app-popover>  <!--//需要傳入component module router三種不同的變數 -->
+            </li>
+            <p class="content">
+              "在 Angular 2 中，一個 Module ( 模組 ) 是一個把彼此互相關聯的 components、directives、pipes 和 services 整合的機制。然後這個模組可以再和其他模組結合，最後就形成我們的網頁應用程式。
+              --by 微中子
+            </p>
+          </div>
+          <div> 
+            <li>
+              <strong>Router</strong>
+              <app-popover [imagepath]="routerpath" title="Router Sample Code"></app-popover>  <!--//需要傳入component module router三種不同的變數 -->
+            </li>
+              <p class="content">
+                "Angular 的路由機制靠的是我們放在 Template 裡的路由插座 - router-outlet 。             
+                路由插座有點像是定位點的概念，我們只要把我們需要切換顯示的區塊裡放入這個路由插座，Angular 的路由機制就會將找到的路由設定裡要顯示的 Component 插入，進而達成換頁的效果。" --by Leo
+              </p>
+          </div> 
+      </div>
+      <div class="col-sm-5">       
+        <div>
+          <img src="../../assets/images/angular_shit.png" width="100%">
+        </div>
+      </div>
     </div>
   </div>
-
-  <app-popover imagepath="../../assets/images/component_sample.PNG"></app-popover>  //需要傳入component module router三種不同的變數
-
-  <div class="row">
-    <div class="col-sm-4">
-        <a class="article-link" href="https://ithelp.ithome.com.tw/users/20090728/ironman/1600" target="_blank">Angular 深入淺出三十天</a>
-    </div>
-    <div class="col-sm-4">
-      <a href="https://ithelp.ithome.com.tw/users/20107113/ironman/1240" target="_blank">用30天深入Angular 5的世界</a>
-    </div>
-    <div class="col-sm-4">
-      <a href="https://ithelp.ithome.com.tw/users/20103745/ironman/1160" target="_blank">Angular 2 之 30 天邁向神乎其技之路</a>
-    </div>
   </div>
-  
 </div>
+
+
+    <!-- <div class="row">
+      <div class="col-sm-4">
+          <a class="article-link" href="https://ithelp.ithome.com.tw/users/20090728/ironman/1600" target="_blank">Angular 深入淺出三十天</a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://ithelp.ithome.com.tw/users/20107113/ironman/1240" target="_blank">用30天深入Angular 5的世界</a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://ithelp.ithome.com.tw/users/20103745/ironman/1160" target="_blank">Angular 2 之 30 天邁向神乎其技之路</a>
+      </div>
+    </div> -->
+  

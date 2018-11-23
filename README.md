@@ -26,3 +26,12 @@ source:　https://stackoverflow.com/questions/42066421/property-value-does-not-e
 reason: Component styles normally apply only to the HTML in the component's own template.<br>
 soluion: Use the /deep/ shadow-piercing descendant combinator to force a style down through the child component tree into all the child component views. The /deep/ combinator works to any depth of nested components, and it applies to both the view children and content children of the component.
 source: https://angular.io/guide/component-styles<br>
+
+4. Cannot display Bootstrap popovers and tooltips.<br>
+reason: May be the integration problem between angular and bootstrap4??
+solution: npm install --save @ng-bootstrap/ng-bootstrap -> import {NgbModule} from '@ng-bootstrap/ng-bootstrap' -> imports: [NgbModule, ...] <br>
+source: https://ng-bootstrap.github.io/#/getting-started <br>
+
+5. Three popovers components are used (all called by home.html). However, it cannot pass three different @input value for data binding. <br>
+reason: ?<br>
+solution: 
